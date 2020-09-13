@@ -14,7 +14,7 @@ import { ReactIdSwiperProps, SwiperInstance, SwiperRefNode } from './types';
 import { classNames, validateChildren, isReactElement, setRef } from './utils';
 import { useForkRef } from './hooks';
 
-const ReactIdSwiper = forwardRef<HTMLDivElement, ReactIdSwiperProps>((props, externalRef) => {
+const ReactIdSwiper = forwardRef<SwiperRefNode, ReactIdSwiperProps>((props, externalRef) => {
   const {
     activeSlideKey,
     ContainerEl,
